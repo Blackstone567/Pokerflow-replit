@@ -1,0 +1,433 @@
+/*BODY ou tout le contenu visible + MAIN ou Contenu principal*/
+
+body {
+   display: flex;
+   flex-direction: column;
+   min-height: 300px;
+   color: black;
+   font-family: 'Roboto', sans-serif;
+   background-image: url("https://wallpapercosmos.com/w/full/f/b/3/1142907-3840x2160-desktop-4k-poker-background.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+
+
+
+/*couleurs texte quand cliquage page*/
+
+/* body:active{
+   background: none;
+   color: rgba(0, 0, 0, 0.692);
+} */
+
+
+/*Changement couleur quand texte selectionné*/
+::-moz-selection { /*pour fonctionnement universel . Pas obligatoire mais mieux*/
+   color: rgba(212, 7, 68, 0.829);
+   background:none;
+   font-style: italic;
+}
+ 
+::selection {
+   color: rgba(184, 3, 3, 0.829);
+   background:none;
+   text-decoration: underline;
+   
+}
+
+p {
+   font-family: 'Hedvig Letters Sans', sans-serif;
+}
+
+main {
+   min-height: 500px;
+   /*Position footer et taille minimum du contenu */
+}
+
+/* div {
+   height: auto;
+   width: auto;
+} */
+
+section {
+   margin-top: 30px;
+   margin-left: 30px;
+   width: 80%;
+   margin: 10px;
+   padding: 10px;
+
+   background-color: beige;
+   overflow: hidden;
+   height: auto;
+   width: 80%;
+}
+
+#variant_title {
+   text-align: center;
+   color: rgb(69, 163, 207);
+   font-size: 35px;
+}
+
+
+article {
+   margin: 10px;
+   padding: 10px;
+   background-color: beige;
+   overflow: hidden;
+   height: auto;
+   width: 80%;
+   display: block;
+}
+
+article img {
+   float: right;
+}
+
+article p {
+   display: flex;
+   /* clear: both; */
+   flex-wrap: wrap;
+   /*Deplacement contenu si retrecissemnt de la page*/
+   height: auto;
+}
+
+article h2 {
+   color: rgba(255, 140, 32, 0.863);
+}
+
+li {
+   list-style: none;
+}
+
+#variantes a {
+   text-decoration: none;
+   color: rgba(24, 151, 160, 0.733);
+}
+
+a {
+   text-decoration: none;
+   color: rgb(139, 137, 137);
+}
+
+figure img{
+   min-height: 100px;
+   max-height: 500px;
+   min-width: 100px;
+   max-width: 500px;
+}
+figure {
+   border: thin #c0c0c0 solid;
+   display: flex;
+   flex-flow: column;
+   padding: 1px;
+   margin: auto;
+ }
+ 
+ figcaption {
+   background-color: #222;
+   color: #fff;
+   font-family: 'Hedvig Letter Sans' ,sans-serif;
+   text-align: center;
+   padding: 2px;
+ }
+
+
+article #before-footer_image {
+   height: auto;
+   width: 300px;
+}
+
+
+.explications_logo p {
+   text-align: justify;
+   padding: 5px;
+}
+
+.explications_logo:before,
+/*contenu avant+contenu apres*/
+.explications_logo:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+.explications_logo div {
+   float: left;
+   width: 250px;
+   /*largeur colonne*/
+   height: 150px;
+   /*hauteur colonne*/
+   margin-left: 40px;
+   /*espace entre les colonnes*/
+}
+
+
+
+
+
+
+
+
+a:active {
+   color: rgb(2, 2, 2);
+   font-style: italic;
+}
+
+
+
+button {
+   background: none;
+   border: none;
+   padding: 10px;
+   color: #fff;
+}
+
+
+button:hover {
+   color: #222;
+   background-color: rgb(255 226 230 / 64%);
+   border-color: rgba(160, 0, 0, 0.753);
+   border-radius: 15px;
+   text-decoration: underline;
+   text-decoration-color: rgb(255, 242, 242);
+   
+}
+
+nav {
+   justify-content: space-between;
+   display: flex;
+}
+
+
+
+#titre-slogan {
+   margin-left: 10%;
+   margin-bottom: 100px;
+}
+
+#pokerflow_titre {
+   color: antiquewhite;
+   font-family: 'Josefin Sans', sans-serif;
+   font-weight: bolder;
+   font-size: 50px;
+}
+
+
+
+#pokerflow_slogan {
+   color: antiquewhite;
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 30px;
+}
+
+#image_titre_page {
+   float: left;
+   height: fit-content;
+   width: fit-content;
+   max-width: 400px;
+   margin-left: 10px;
+}
+
+#image_slogan_page {
+   float: left;
+   height: fit-content;
+   width: fit-content;
+   max-width: 400px;
+   margin-left: 10px;
+}
+
+#titre_principal_page p {
+   clear: both;
+}
+
+
+
+
+/*NAVBAR ou barre de navigation/menu*/
+
+
+
+
+/**/
+hr {
+   margin-left: 15px;
+   margin-right: 15px;
+   color: whitesmoke;
+   border: 1px solid whitesmoke;
+   background-color: whitesmoke;
+   margin-bottom: 15%;
+}
+
+/**/
+
+.header_container {
+   position: relative;
+}
+
+#logo_navbar {
+   font-size: 30px;
+   /*font-size: 40px;*/
+   /* padding-left: 50px; padding-right: 60px;
+   border-left: 3px solid white; */
+
+   /* font-family: 'Josefin Sans', sans-serif; */
+   /* font-family: 'Hedvig Letters Sans',sans-serif; */
+   font-family: 'Roboto', sans-serif;
+   /** font-family:'Red Hat Display',sans-serif; */
+   /* font-family: 'Comfortaa',sans-serif; */
+
+   /* writing-mode: sideways-rl;
+   text-orientation: sideways-right;   */
+
+
+   /*Orientation titre/logo navbar : */
+   -webkit-writing-mode: vertical-rl;
+   /*extension pour fonctionnement sur tous les navigateurs*/
+   -ms-writing-mode: vertical-rl;
+   /*ajout du a l'extension webkit*/
+   writing-mode: vertical-rl;
+   /*syntax normale */
+
+   margin-bottom: 20px;
+   margin-top: 10%;
+   /*margin-top: 100%;*/
+}
+
+.navbar {
+   border-left: 1px solid rgba(255, 81, 0, 0.342);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   width: auto;
+   height: 100%;
+   color: antiquewhite;
+   background-color: rgb(150, 32, 32);
+}
+
+.navbar li {
+   margin-bottom: auto;
+   /*margin-bottom: 40px; */
+   padding: 15px;
+}
+
+/**/
+nav ul {
+   margin-bottom: auto;
+   /*margin-bottom: 90%;*/
+}
+
+/**/
+
+.navbar a {
+    color: rgb(255 254 254)
+}
+
+
+.navbar button {
+   padding: 10px;
+   text-align: center;
+   display: inline-block;
+   margin-left: 10px;
+   margin-right: 25px;
+   margin-top: auto;
+   margin-bottom: auto;
+}
+
+
+
+
+
+
+
+/*FOOTER ou bas de page*/
+
+
+
+
+
+footer {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+   color: rgb(97, 89, 89);
+   font-size: xx-large;
+   background-color: rgb(34, 31, 31);
+   height: auto;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin-top: 30px;
+}
+
+
+
+footer nav div {
+   display: flex;
+   flex-direction: row;
+   margin-top: auto;
+   padding: 10px;
+   text-align: center;
+   color:rgb(153, 96, 96)
+}
+
+footer nav div p {
+   display: flex;
+   flex-direction: row;
+   margin-top: auto;
+   padding: 10px;
+   text-align: center;
+   
+}
+
+
+footer #infos-footer {
+   display: flex;
+   flex-direction: row;
+   margin-top: auto;
+   margin-left: 30%;
+   margin-right: 30%;
+   padding: 10px;
+   text-align: center;
+   justify-content: center;
+   justify-content: space-evenly;
+   color: rgb(193, 241, 255);
+   font-size: 15px;
+
+}
+
+footer nav {
+   display: flex;
+   flex-direction: row;
+   margin-top: auto;
+   padding: 5px;
+   text-align: center;
+   justify-content: center;
+   color: rgb(148, 67, 67);
+   font-size: 15px;
+}
+
+#bonus h3{
+   color:rgb(250, 88, 88);
+}
+
+#bonus p{
+   font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+#bonus-footer p{
+   color:rgb(209, 53, 53)
+}
+
+
+#bonus-footer div{
+   color:rgb(83, 82, 82)
+}
